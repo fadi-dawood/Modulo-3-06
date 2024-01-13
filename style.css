@@ -1,0 +1,268 @@
+/** General */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f1f5;
+}
+
+
+
+/** Navbar overwrite */
+.navbar.bg-light {
+    background-color: white !important;
+}
+
+.navbar.bg-light .nav-item .nav-link {
+    color: black;
+}
+
+.navbar>div.container-fluid>form .btn.btn-outline-success:last-child {
+    height: 50px;
+    width: 50px;
+    background-image: url(assets/avatar-1.jpg);
+    object-fit: cover;
+    background-size: 100% 100%;
+    border-radius: 50%;
+    border: 0;
+}
+
+.navbar>div.container-fluid>form .btn.btn-outline-success:first-child {
+    height: 50px;
+    width: 50px;
+    background-color: #f5f4f8;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0;
+    color: gray;
+}
+
+.navbar>div.container-fluid>form .far div {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #7550fe;
+    border: white 3px solid;
+    transform: translate(17px, -29px);
+    position: absolute;
+
+}
+
+.navbar>div.container-fluid>form button:last-of-type>div {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #1acb98;
+    border: white 3px solid;
+    transform: translate(17px, 13px);
+    position: absolute;
+
+}
+
+.navbar>div.container-fluid>form {
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+@media (max-width: 992px) {
+    .navbar>div.container-fluid>form {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 50px;
+    }
+}
+
+
+
+/** Welcome section overwrite */
+.welcom-sec {
+    width: 100%;
+    background-color: #7550fd;
+    color: white;
+    margin-bottom: 0 !important;
+}
+
+.welcom-sec > div > div > div.card-body {
+    height: 100%;
+}
+
+.welcom-sec .btn-primary {
+    background-color: #1acb98;
+    border: 0;
+}
+
+.welcom-sec .btn {
+    height: 40px;
+}
+
+.welcom-sec h5 {
+    font-size: 22pt;
+}
+
+.welcom-sec p {
+    color: #bda9ff;
+    font-size: 16pt;
+}
+
+.welcom-sec img {
+    width: auto;
+    height: 100%;
+}
+
+
+/** Info section overwrite */
+.info-sec {
+    background-color: white;
+    margin-top: 0;
+}
+
+.info-sec>div>div>div:first-of-type {
+    height: 50px;
+    width: 50px;
+    background-color: #ffeeda;
+    border-radius: 50%;
+    color: #d0a87e;
+}
+
+.info-sec .row>* {
+    width: auto;
+}
+
+
+/** Carousel section overwrite */
+/*? CARD */
+.carousel-item .card {
+    height: 450px;
+}
+
+.carousel-item .card>img {
+    max-height: 35%;
+}
+
+.carousel-item .card>div h5 {
+    height: 30%;
+    overflow: hidden;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.card-body > div:last-of-type p {
+    font-size: 12px;
+}
+
+i {
+    color: #5e5a78;
+}
+
+.card-text>.level,
+.card-text>.duration {
+    font-size: 12px;
+}
+
+.yellow {
+    color: #ffa740;
+}
+
+.fa-signal {
+    color: #744ffe;
+}
+
+.crossed-out {
+    text-decoration: line-through;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 15px;
+}
+
+.card-body>div:last-of-type img {
+    border-radius: 50%;
+}
+
+.fa-bookmark {
+    cursor: pointer;
+}
+
+.overflow {
+    overflow: visible;
+}
+
+/*? card animation */
+.carousel-item .card:hover {
+    transition: all 1s ease-in-out 0.2s;
+    box-shadow: 2px 2px 10px #5e5a78;
+    scale: 1.15;
+    z-index: 2;
+    overflow: visible;
+}
+
+/*? Carousel */
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child,
+    .carousel-inner .carousel-item>div:nth-child(2) {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/*? medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+
+/** footer section overwrite */
+footer a {
+    text-decoration: none;
+    color: gray;
+    list-style-type: none;
+}
+
+footer ul {
+    width: 30%;
+}
+
+footer p {
+    color: gray;
+}

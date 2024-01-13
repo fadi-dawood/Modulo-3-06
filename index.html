@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Students</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--* Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler order-2 position-absolute mt-2 top-0 end-0" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Browse
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Landing
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Accounts
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex" role="search">
+                <button class="btn btn-outline-success  mx-3" type="submit">
+                    <i class="far fa-bell">
+                        <div id="notification">
+                            <div></div>
+                        </div>
+                    </i>
+                </button>
+                <button class="btn btn-outline-success me-3" type="submit">
+                    <div>
+                        <div></div>
+                    </div>
+                </button>
+            </form>
+        </div>
+    </nav>
+
+
+    <!--* Welcome section -->
+    <div class="card mb-3 welcom-sec">
+        <div class="row g-0">
+            <div class="col-lg-3 offset-lg-2 col-sm-10 offset-sm-1">
+                <div class="card-body d-flex flex-column justify-content-center">
+                    <h5 class="card-title">Welcom Web Students!</h5>
+                    <p class="card-text">Hand-Picked Instructur and expertly crufted courses, designed for the modern
+                        students and entrepreneur.
+                    </p>
+                    <div>
+                        <button type="button" class="btn btn-primary">Browse Courses</button>
+                        <button type="button" class="btn btn-light">Are you Instructor?</button>
+                    </div>
+                </div>
+            </div>
+            <div class="offset-lg-1 col-lg-4 col-sm-8 offset-sm-2">
+                <img src="assets/hero-img.png" class="img-fluid rounded-start" alt="...">
+            </div>
+        </div>
+    </div>
+
+
+    <!--* Info section -->
+    <div class="ps-5 info-sec row flex-column flex-md-row align-items-center justify-content-around ">
+        <div class="card col ps-5 mb-3 border-0">
+            <div class="row g-0 d-flex justify-content-start align-items-center flex-nowrap">
+                <div class="d-flex justify-content-center align-items-center col-md-2">
+                    <i class=" fas fa-video"></i>
+                </div>
+                <div class="col-md-10">
+                    <div class="card-body">
+                        <h5 class="card-title">30,000 online courses</h5>
+                        <p class="card-text">Enjoy a variety of fresh topics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col ps-5 mb-3 border-0">
+            <div class=" row g-0 d-flex justify-content-start align-items-center flex-nowrap">
+                <div class="d-flex justify-content-center align-items-center col-md-2">
+                    <i class=" fas fa-video"></i>
+                </div>
+                <div class="col-md-10">
+                    <div class="card-body">
+                        <h5 class="card-title">Expert instruction</h5>
+                        <p class="card-text">Find the right instructor for you</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col ps-5 mb-3 border-0">
+            <div class=" row g-0 d-flex justify-content-start align-items-center flex-nowrap">
+                <div class="d-flex justify-content-center align-items-center col-md-2">
+                    <i class=" fas fa-video"></i>
+                </div>
+                <div class="col-md-10">
+                    <div class="card-body">
+                        <h5 class="card-title">Lifetime access</h5>
+                        <p class="card-text">Learn on your schedule</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--* 1st Collapse (Racommended to you) -->
+    <div class="container my-5">
+        <h2 class="font-weight-light mx-4">Recommended to you</h2>
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="racommended carousel-item active col-md-3 col-sm-6">
+                        <div class="col-6 col-md-3">
+                            <div class="card mx-1">
+                                <img src="assets/course-angular.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
+                                    <p class="card-text">
+                                        <i class="far fa-clock"></i>
+                                        <span class="duration">2h 40m</span> &nbsp
+                                        <i class="fas fa-signal"></i>
+                                        <span class="level">Advance</span>
+                                    </p>
+                                    <p class="card-text yellow ">
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star-half-alt"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        3.5 (1.500)
+                                    </p>
+                                    <p class="card-text">
+                                        $500 &nbsp <span class="crossed-out">$600</span>
+                                    </p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="mx-2" style="height: 40px;" src="assets/avatar-2.jpg" alt="...">
+                                            <p class="my-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <i class="far fa-bookmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="racommended carousel-item col-md-3 col-sm-6">
+                        <div class="col-6 col-md-3">
+                            <div class="card mx-1">
+                                <img src="assets/course-laravel.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Laravel: the ultimate beginner's guide to learn</h5>
+                                    <p class="card-text">
+                                        <i class="far fa-clock"></i>
+                                        <span class="duration">1h 00m</span> &nbsp
+                                        <i class="fas fa-signal"></i>
+                                        <span class="level">Beginner</span>
+                                    </p>
+                                    <p class="card-text yellow ">
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star-half-alt"></i>
+                                        4.5 (2.500)
+                                    </p>
+                                    <p class="card-text">
+                                        $500 &nbsp <span class="crossed-out">$600</span>
+                                    </p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="mx-2" style="height: 40px;" src="assets/avatar-7.jpg" alt="...">
+                                            <p class="my-0">Sobo Rikhan</p>
+                                        </div>
+                                        <i class="far fa-bookmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="racommended carousel-item col-md-3 col-sm-6">
+                        <div class="col-6 col-md-3">
+                            <div class="card mx-1">
+                                <img src="assets/course-gatsby.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Revolution how you bild the web</h5>
+                                    <p class="card-text">
+                                        <i class="far fa-clock"></i>
+                                        <span class="duration">1h 46m</span> &nbsp
+                                        <i class="fas fa-signal"></i>
+                                        <span class="level">Intermediate</span>
+                                    </p>
+                                    <p class="card-text yellow ">
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        2 (16.500)
+                                    </p>
+                                    <p class="card-text">
+                                        $800 &nbsp <span class="crossed-out">$850</span>
+                                    </p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="mx-2" style="height: 40px;" src="assets/avatar-5.jpg" alt="...">
+                                            <p class="my-0">Jenny Wilson</p>
+                                        </div>
+                                        <i class="far fa-bookmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="racommended carousel-item col-md-3 col-sm-6">
+                        <div class="col-6 col-md-3">
+                            <div class="card mx-1">
+                                <img src="assets/course-html.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">HTML: full course - build a website tutorial</h5>
+                                    <p class="card-text">
+                                        <i class="far fa-clock"></i>
+                                        <span class="duration">1h 46m</span> &nbsp
+                                        <i class="fas fa-signal"></i>
+                                        <span class="level">Advance</span>
+                                    </p>
+                                    <p class="card-text yellow ">
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star-half-alt"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        3.5 (1.500)
+                                    </p>
+                                    <p class="card-text">
+                                        $550 &nbsp <span class="crossed-out">$700</span>
+                                    </p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="mx-2" style="height: 40px;" src="assets/avatar-4.jpg" alt="...">
+                                            <p class="my-0">Miston Wilson</p>
+                                        </div>
+                                        <i class="far fa-bookmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="racommended carousel-item col-md-3 col-sm-6">
+                        <div class="col-6 col-md-3">
+                            <div class="card mx-1">
+                                <img src="assets/course-gatsby.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Revolution how you bild the web</h5>
+                                    <p class="card-text">
+                                        <i class="far fa-clock"></i>
+                                        <span class="duration">1h 46m</span> &nbsp
+                                        <i class="fas fa-signal"></i>
+                                        <span class="level">Intermediate</span>
+                                    </p>
+                                    <p class="card-text yellow ">
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        2 (16.500)
+                                    </p>
+                                    <p class="card-text">
+                                        $800 &nbsp <span class="crossed-out">$850</span>
+                                    </p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="mx-2" style="height: 40px;" src="assets/avatar-5.jpg" alt="...">
+                                            <p class="my-0">Jenny Wilson</p>
+                                        </div>
+                                        <i class="far fa-bookmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev bg-trasparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <a class="carousel-control-next bg-trasparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--* 2nd Collapse (Most popular) -->
+    <div class="container my-5">
+        <h2 class="font-weight-light mx-4">Most popular</h2>
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel 2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="most-popular carousel-item active col-md-3 col-sm-6">
+                        <div class="col-6 col-md-3">
+                            <div class="card mx-1">
+                                <img src="assets/course-angular.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
+                                    <p class="card-text">
+                                        <i class="far fa-clock"></i>
+                                        <span class="duration">2h 40m</span> &nbsp
+                                        <i class="fas fa-signal"></i>
+                                        <span class="level">Advance</span>
+                                    </p>
+                                    <p class="card-text yellow ">
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star-half-alt"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        3.5 (1.500)
+                                    </p>
+                                    <p class="card-text">
+                                        $500 &nbsp <span class="crossed-out">$600</span>
+                                    </p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="mx-2" style="height: 40px;" src="assets/avatar-2.jpg" alt="...">
+                                            <p class="my-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <i class="far fa-bookmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="most-popular carousel-item col-md-3 col-sm-6">
+                        <div class="col-6 col-md-3">
+                            <div class="card mx-1">
+                                <img src="assets/course-laravel.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Laravel: the ultimate beginner's guide to learn</h5>
+                                    <p class="card-text">
+                                        <i class="far fa-clock"></i>
+                                        <span class="duration">1h 00m</span> &nbsp
+                                        <i class="fas fa-signal"></i>
+                                        <span class="level">Beginner</span>
+                                    </p>
+                                    <p class="card-text yellow ">
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star-half-alt"></i>
+                                        4.5 (2.500)
+                                    </p>
+                                    <p class="card-text">
+                                        $500 &nbsp <span class="crossed-out">$600</span>
+                                    </p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="mx-2" style="height: 40px;" src="assets/avatar-7.jpg" alt="...">
+                                            <p class="my-0">Sobo Rikhan</p>
+                                        </div>
+                                        <i class="far fa-bookmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="most-popular carousel-item col-md-3 col-sm-6">
+                        <div class="col-6 col-md-3">
+                            <div class="card mx-1">
+                                <img src="assets/course-gatsby.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Revolution how you bild the web</h5>
+                                    <p class="card-text">
+                                        <i class="far fa-clock"></i>
+                                        <span class="duration">1h 46m</span> &nbsp
+                                        <i class="fas fa-signal"></i>
+                                        <span class="level">Intermediate</span>
+                                    </p>
+                                    <p class="card-text yellow ">
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        2 (16.500)
+                                    </p>
+                                    <p class="card-text">
+                                        $800 &nbsp <span class="crossed-out">$850</span>
+                                    </p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="mx-2" style="height: 40px;" src="assets/avatar-5.jpg" alt="...">
+                                            <p class="my-0">Jenny Wilson</p>
+                                        </div>
+                                        <i class="far fa-bookmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="most-popular carousel-item col-md-3 col-sm-6">
+                        <div class="col-6 col-md-3">
+                            <div class="card mx-1">
+                                <img src="assets/course-html.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">HTML: full course - build a website tutorial</h5>
+                                    <p class="card-text">
+                                        <i class="far fa-clock"></i>
+                                        <span class="duration">1h 46m</span> &nbsp
+                                        <i class="fas fa-signal"></i>
+                                        <span class="level">Advance</span>
+                                    </p>
+                                    <p class="card-text yellow ">
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star-half-alt"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        3.5 (1.500)
+                                    </p>
+                                    <p class="card-text">
+                                        $550 &nbsp <span class="crossed-out">$700</span>
+                                    </p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="mx-2" style="height: 40px;" src="assets/avatar-4.jpg" alt="...">
+                                            <p class="my-0">Miston Wilson</p>
+                                        </div>
+                                        <i class="far fa-bookmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="most-popular carousel-item col-md-3 col-sm-6">
+                        <div class="col-6 col-md-3">
+                            <div class="card mx-1">
+                                <img src="assets/course-gatsby.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Revolution how you bild the web</h5>
+                                    <p class="card-text">
+                                        <i class="far fa-clock"></i>
+                                        <span class="duration">1h 46m</span> &nbsp
+                                        <i class="fas fa-signal"></i>
+                                        <span class="level">Intermediate</span>
+                                    </p>
+                                    <p class="card-text yellow ">
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        2 (16.500)
+                                    </p>
+                                    <p class="card-text">
+                                        $800 &nbsp <span class="crossed-out">$850</span>
+                                    </p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="mx-2" style="height: 40px;" src="assets/avatar-5.jpg" alt="...">
+                                            <p class="my-0">Jenny Wilson</p>
+                                        </div>
+                                        <i class="far fa-bookmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev bg-trasparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <a class="carousel-control-next bg-trasparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--* 3rd Collapse (Trending) -->
+    <div class="container my-5">
+        <h2 class="font-weight-light mx-4">Most popular</h2>
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel 2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="most-popular carousel-item active col-md-3 col-sm-6">
+                        <div class="col-6 col-md-3">
+                            <div class="card mx-1">
+                                <img src="assets/course-angular.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
+                                    <p class="card-text">
+                                        <i class="far fa-clock"></i>
+                                        <span class="duration">2h 40m</span> &nbsp
+                                        <i class="fas fa-signal"></i>
+                                        <span class="level">Advance</span>
+                                    </p>
+                                    <p class="card-text yellow ">
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star-half-alt"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        3.5 (1.500)
+                                    </p>
+                                    <p class="card-text">
+                                        $500 &nbsp <span class="crossed-out">$600</span>
+                                    </p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="mx-2" style="height: 40px;" src="assets/avatar-2.jpg" alt="...">
+                                            <p class="my-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <i class="far fa-bookmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="most-popular carousel-item col-md-3 col-sm-6">
+                        <div class="col-6 col-md-3">
+                            <div class="card mx-1">
+                                <img src="assets/course-laravel.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Laravel: the ultimate beginner's guide to learn</h5>
+                                    <p class="card-text">
+                                        <i class="far fa-clock"></i>
+                                        <span class="duration">1h 00m</span> &nbsp
+                                        <i class="fas fa-signal"></i>
+                                        <span class="level">Beginner</span>
+                                    </p>
+                                    <p class="card-text yellow ">
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star-half-alt"></i>
+                                        4.5 (2.500)
+                                    </p>
+                                    <p class="card-text">
+                                        $500 &nbsp <span class="crossed-out">$600</span>
+                                    </p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="mx-2" style="height: 40px;" src="assets/avatar-7.jpg" alt="...">
+                                            <p class="my-0">Sobo Rikhan</p>
+                                        </div>
+                                        <i class="far fa-bookmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="most-popular carousel-item col-md-3 col-sm-6">
+                        <div class="col-6 col-md-3">
+                            <div class="card mx-1">
+                                <img src="assets/course-gatsby.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Revolution how you bild the web</h5>
+                                    <p class="card-text">
+                                        <i class="far fa-clock"></i>
+                                        <span class="duration">1h 46m</span> &nbsp
+                                        <i class="fas fa-signal"></i>
+                                        <span class="level">Intermediate</span>
+                                    </p>
+                                    <p class="card-text yellow ">
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        2 (16.500)
+                                    </p>
+                                    <p class="card-text">
+                                        $800 &nbsp <span class="crossed-out">$850</span>
+                                    </p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="mx-2" style="height: 40px;" src="assets/avatar-5.jpg" alt="...">
+                                            <p class="my-0">Jenny Wilson</p>
+                                        </div>
+                                        <i class="far fa-bookmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="most-popular carousel-item col-md-3 col-sm-6">
+                        <div class="col-6 col-md-3">
+                            <div class="card mx-1">
+                                <img src="assets/course-html.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">HTML: full course - build a website tutorial</h5>
+                                    <p class="card-text">
+                                        <i class="far fa-clock"></i>
+                                        <span class="duration">1h 46m</span> &nbsp
+                                        <i class="fas fa-signal"></i>
+                                        <span class="level">Advance</span>
+                                    </p>
+                                    <p class="card-text yellow ">
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star-half-alt"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        3.5 (1.500)
+                                    </p>
+                                    <p class="card-text">
+                                        $550 &nbsp <span class="crossed-out">$700</span>
+                                    </p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="mx-2" style="height: 40px;" src="assets/avatar-4.jpg" alt="...">
+                                            <p class="my-0">Miston Wilson</p>
+                                        </div>
+                                        <i class="far fa-bookmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="most-popular carousel-item col-md-3 col-sm-6">
+                        <div class="col-6 col-md-3">
+                            <div class="card mx-1">
+                                <img src="assets/course-gatsby.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Revolution how you bild the web</h5>
+                                    <p class="card-text">
+                                        <i class="far fa-clock"></i>
+                                        <span class="duration">1h 46m</span> &nbsp
+                                        <i class="fas fa-signal"></i>
+                                        <span class="level">Intermediate</span>
+                                    </p>
+                                    <p class="card-text yellow ">
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow fas fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        <i class="yellow far fa-star"></i>
+                                        2 (16.500)
+                                    </p>
+                                    <p class="card-text">
+                                        $800 &nbsp <span class="crossed-out">$850</span>
+                                    </p>
+                                    <hr>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <img class="mx-2" style="height: 40px;" src="assets/avatar-5.jpg" alt="...">
+                                            <p class="my-0">Jenny Wilson</p>
+                                        </div>
+                                        <i class="far fa-bookmark"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev bg-trasparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                    </span>
+                </a>
+                <a class="carousel-control-next bg-trasparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--* Footer -->
+    <hr>
+    <footer class="d-flex flex-column flex-md-row justify-content-around align-items-center">
+        <p>Tutti i diretti riservati..</p>
+        <ul class="d-flex justify-content-around align-items-center">
+            <a href="" class="mx-5 mx-md-2">
+                <li>Privecy</li>
+            </a>
+            <a href="" class="mx-5 mx-md-2">
+                <li>Terms</li>
+            </a>
+            <a href="" class="mx-5 mx-md-2">
+                <li>Feedback</li>
+            </a>
+            <a href="" class="mx-5 mx-md-2">
+                <li>Support</li>
+            </a>
+        </ul>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+</html>
